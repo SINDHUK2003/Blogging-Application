@@ -59,13 +59,13 @@ This project is a blog application featuring user authentication, blog post mana
 - **Follow Users**: 
     - Stores the follow relationship in the MySQL database.
 
+
+
 <img width="1470" alt="Screenshot 2024-04-02 at 2 11 17 PM" src="https://github.com/SINDHUK2003/Blogging-Application/assets/102289855/f00c6412-7e1c-4710-9fa2-af81afe67d4b">
 
+
+
 ## FastAPI in the Project
-
-## FastAPI Usage Description:
-
-### Web Application Framework:
 
 FastAPI serves as the main web application framework, allowing for the creation of API endpoints to handle HTTP requests and responses. The use of FastAPI simplifies the process of building robust and scalable web APIs.
 
