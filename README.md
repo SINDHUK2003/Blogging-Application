@@ -59,6 +59,8 @@ This project is a blog application featuring user authentication, blog post mana
 - **Follow Users**: 
     - Stores the follow relationship in the MySQL database.
 
+<img width="1470" alt="Screenshot 2024-04-02 at 2 11 17 PM" src="https://github.com/SINDHUK2003/Blogging-Application/assets/102289855/f00c6412-7e1c-4710-9fa2-af81afe67d4b">
+
 ## FastAPI in the Project
 
 ## FastAPI Usage Description:
