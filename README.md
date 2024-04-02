@@ -12,8 +12,7 @@ This project is a blog application featuring user authentication, blog post mana
 - **API**: FastAPI
 
 
-## Working Flow of Each Function
-
+## Working Flow 
 ### User Authentication
 
 - **Signup**: 
@@ -64,11 +63,11 @@ This project is a blog application featuring user authentication, blog post mana
 
 ## FastAPI Usage Description:
 
-### 1. Web Application Framework:
+### Web Application Framework:
 
 FastAPI serves as the main web application framework, allowing for the creation of API endpoints to handle HTTP requests and responses. The use of FastAPI simplifies the process of building robust and scalable web APIs.
 
-### 2. Endpoint Definitions:
+### Endpoint Definitions:
 
 FastAPI decorators (`@app.post`, `@app.get`, `@app.put`, `@app.delete`) are used to define the API endpoints for various functionalities of the blogging application:
 
@@ -103,21 +102,14 @@ FastAPI decorators (`@app.post`, `@app.get`, `@app.put`, `@app.delete`) are used
 
 - `@app.get("/view-public-blogs/")`: Endpoint to view all public blog posts.
 
-### 3. Data Validation:
+### Data Validation:
 
 FastAPI integrates seamlessly with Pydantic, a data validation library. Pydantic models (`User`, `UserProfile`, `Blog`, `Comment`, `Follow`) are used to define the structure of the request and response data for each API endpoint. This ensures that the incoming data is validated against the specified model before being processed, improving the robustness and reliability of the application.
 
-### 4. Automatic API Documentation:
-
-FastAPI provides automatic API documentation through Swagger UI and ReDoc. By simply visiting the `/docs` or `/redoc` endpoints in the web browser, you can access interactive documentation for the API, which includes details about the available endpoints, request/response formats, and example requests/responses. This feature aids in the development process by allowing developers to test endpoints and understand the API structure easily.
-
-### 5. Database Operations:
-
-FastAPI is used to handle database operations within the endpoint functions by executing CRUD (Create, Read, Update, Delete) operations on the SQLite database:
+### Database Operations:
 
 - Connecting to the SQLite database.
 - Executing SQL queries to insert, retrieve, update, or delete data.
-- Handling exceptions and errors related to database operations.
 
 ## Setup Instructions:
 
@@ -144,10 +136,11 @@ FastAPI is used to handle database operations within the endpoint functions by e
     ```bash
     uvicorn main:app --reload
     ```
+5. Run the Streamlit application:
 
-## Contributing:
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+    ```bash
+    streamlit run streamlit_frontend.py
+    ```
 
 ## License:
 
